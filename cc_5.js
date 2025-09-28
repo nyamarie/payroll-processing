@@ -53,12 +53,12 @@ function calculateBasePay(rate, hours) {
   
   // Console tests
   // Base pay tests
-  console.log("Base 20×35 =", round2(calculateBasePay(20, 35))); // 700.00
-  console.log("Base 20×45 =", round2(calculateBasePay(20, 45))); // 800.00 (capped at 40)
+  console.log("Base 20x35 =", round2(calculateBasePay(20, 35))); // 700.00
+  console.log("Base 20x45 =", round2(calculateBasePay(20, 45))); // 800.00 (capped at 40)
   
   // Overtime tests
-  console.log("OT 20×38 =", round2(calculateOvertimePay(20, 38))); // 0.00
-  console.log("OT 20×45 =", round2(calculateOvertimePay(20, 45))); // 150.00 (5 * 20 * 1.5)
+  console.log("OT 20x38 =", round2(calculateOvertimePay(20, 38))); // 0.00
+  console.log("OT 20x45 =", round2(calculateOvertimePay(20, 45))); // 150.00 (5 * 20 * 1.5)
   
   // Tax tests
   console.log("Tax on 1000 =", round2(calculateTaxes(1000))); // 150.00
